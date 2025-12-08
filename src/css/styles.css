@@ -221,7 +221,6 @@ footer {
 			grid-column: span 7;
 			display: block;
       aspect-ratio: 4/3;
-      background-color: #ffa700;
       overflow: hidden;
 			img {
 				width: 100%;
