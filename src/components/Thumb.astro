@@ -1,0 +1,16 @@
+---
+const { url, slug, summary, title, src, alt, category, company } = Astro.props;
+---
+<div class="card" id={slug}>
+	<a href={url} class="thumb">
+		<span class="hoverbutton"><span>Read on</span></span>
+		<img src={src} alt={alt} />
+	</a>
+	<div class="text">
+		<span class="category">{category}</span>
+		<h3 class="title">{title}</h3>
+		<span class="company">{company}</span>
+		<p class="summary">{summary}</p>
+		<a href={url} class="readon">Read on</a>
+	</div>
+</div>

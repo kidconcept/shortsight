@@ -1,0 +1,235 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ali",
+				"alignments"
+			],
+			[
+				"la",
+				"lavender"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos"
+	],
+	"file_history":
+	[
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/99pi/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/advisorsoftware/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/agilenonprofit/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/crm/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/divethedata/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/icsj/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/mantasponsorship/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/ms/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/people/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/pipercode/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/rigonauts/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/seaserp/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/sweetclocks/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/weekapaug/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/digital/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/exhibition/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/physical/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/research/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/story/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/css/vars.css",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/css/style.css",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/js/scripts.js",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/graphs/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Archive/danvallentyne.com/2024/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/ms/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/advisorsoftware/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/agilenonprofit/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/crm/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/divethedata/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/icsj/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/99pi/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/mantasponsorship/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/pipercode/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/people/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/rigonauts/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/sweetclocks/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/weekapaug/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/cases/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/mystory/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/research/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/exhibit/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/physical/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/digital/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/css/style.css",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/work/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/work/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/digitalproduct.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/mobile.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/danvallentyne.com/css/vars.css",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/work/graphs/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/work/ms/index.html"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "thereg.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

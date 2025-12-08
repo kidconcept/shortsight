@@ -1,0 +1,417 @@
+:root {
+  --text: #000;
+  --knockout: #fff;
+  --muted: #828282;
+  --purple: #7C5293CC;
+  --green: #5ABA49CC;
+  --blue: #1189D8CC;
+  --yellow: #B2BA49CC;
+
+  --corners: 1rem;
+}
+
+
+/* Typography */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: clamp(16px, 1.5vw, 22px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-family: "Merriweather", serif;
+  margin-top: 6rem;
+}
+
+h2 {
+	font-family: "Merriweather", serif;
+	font-weight: 500;
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+nav a {
+	color: var(--text);
+	text-decoration: none;
+	padding: 1rem;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+footer nav a {
+	color: var(--knockout);
+}
+
+.intro {
+	font-size: 2.2rem;
+}
+
+.skills p {
+	margin-top: 0;
+}
+
+.quotes {
+	border: 1px 0 1px 0;
+	border-color: var(--muted);
+}
+
+a {
+	color: var(--blue);
+}
+
+/* Layouts */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header,
+footer {
+	height: 14vh;
+	.navcontainer {
+		text-align: center;
+		align-content: center;
+		justify-content: stretch; 
+		height: 100%;
+		display: grid;
+	}
+}
+
+header {
+	/*background: url('/src/media/header.jpg') no-repeat center/cover;*/
+	border-bottom: 1px solid var(--muted);
+}
+
+footer {
+	background: url('/src/media/footer.jpg') no-repeat center/cover;
+}
+
+.centercol {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1920px;
+	@media (orientation: portrait) {
+	    width: 90%;
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 3vw;
+  row-gap: 3vw;
+	grid-auto-rows: auto;
+}
+
+.intro {
+	grid-column: 3 / span 8;
+	margin: 12vw 0;
+	@media (orientation: portrait) {
+		margin: 0;
+		grid-column: span 12;
+	}
+}
+
+.skills {
+	margin: 12vw 0;
+}
+
+.skills .card {
+	grid-column: span 6;
+	margin: 0 2vw;
+	@media (orientation: portrait) {
+	    grid-column: span 12;
+	    h2 {
+	    	margin-top: .6rem;
+	    }
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+.quotes {
+	border-top: 1px solid var(--muted);
+	border-bottom: 1px solid var(--muted);
+	padding: 4rem 0;
+	margin: 4rem 0;
+	h3 {
+		grid-column: span 12;
+	}
+	.card {
+		grid-column: span 6;
+		display: flex;
+		flex-direction: row;
+		@media (orientation: portrait) {
+			grid-column: span 12;
+		}
+		.pic {
+			width: 23%;
+			img {
+				width: 60%;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		.text {
+			width: 77%;
+			.quote {
+				margin-top: 0;
+			}
+			.name {
+				margin-bottom: 0;
+			}
+			.role {
+				font-size: 1rem;
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+/* Works */
+
+.works {
+	margin: 6vw 0;
+	grid-template-columns: repeat(12, 1fr);
+	.category {
+		margin: 0;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.title {
+		margin: 0;
+		text-align: left;
+		font-family: "Merriweather", serif;
+	}
+	.company {
+		margin: 0;
+	}
+	a {
+		color: var(--blue);
+  	font-size: 1.7rem;
+	}
+	.card {
+		grid-column: span 12;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		column-gap: 3vw;
+		margin-bottom: 4vw;
+		@media (orientation: portrait) {
+			margin-bottom: 4rem;
+			padding-bottom: 4rem;
+			border-bottom: 1px solid var(--muted);
+		}
+		.thumb {
+			grid-column: span 7;
+			display: block;
+      aspect-ratio: 4/3;
+      background-color: #ffa700;
+      overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.hoverbutton {
+				display: none;
+			}
+		}
+		.text {
+			grid-column: span 5;
+		}
+		@media (orientation: portrait) {
+			.thumb {
+				grid-column: span 12;
+			}
+			.text {
+				grid-column: span 12;
+			}
+		}
+	}
+}
+
+.works.featured {
+	grid-template-columns: repeat(16, 1fr);
+	.card {
+		display: block;
+		margin-bottom: 0;
+		a {
+			display: block;
+			position: relative;
+			.hoverbutton {
+				height: 11rem;
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100%;
+        color: var(--knockout);
+        text-decoration: none;
+        font-size: 4rem;
+        display: flex;
+  			align-items: center;
+  			border-top-left-radius: var(--corners);
+  			border-top-right-radius: var(--corners);
+  			@media (orientation: portrait) {
+  				height: 7rem;
+  				font-size: 2rem;
+  			}
+  			span {
+  				padding: 0 0 0 3rem;
+  			}
+			}
+			img {
+				max-width: 100%;
+				display: block;
+				border-radius: var(--corners);
+			}
+		}
+		.readon {
+			display: none;
+		}
+		.text {
+			margin-top: 1.2vw;
+			font-size: 1.1rem;
+		}
+	}
+	.card#morganstanley {
+		order: 1;
+		grid-column: span 10;
+		align-self: end;
+		.hoverbutton {
+			background-color: var(--purple);
+		}
+	}
+	.card#enrollment123 {
+		order: 2;
+		grid-column: span 6;
+		align-self: end;
+		.hoverbutton {
+			background-color: var(--yellow);
+		}
+	}
+	.card#piper {
+		order: 3;
+		grid-column: span 6;
+		.hoverbutton {
+			background-color: var(--green);
+		}
+	}
+	.card#mmf {
+		order: 4;
+		grid-column: span 10;
+		.hoverbutton {
+			background-color: var(--blue);
+		}
+	}
+	@media (orientation: portrait) {
+		.card#morganstanley,
+		.card#enrollment123,
+		.card#piper,
+		.card#mmf {
+			grid-column: span 16;
+		}
+	}
+}
+
+div.readmore {
+	margin: 16rem 0;
+	text-align: center;
+	@media (orientation: portrait) {
+		margin: 8rem 0;
+	}
+}
+
+a.big {
+	background-color: var(--blue);
+  padding: 2rem 3rem;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--knockout);
+  border-radius: var(--corners);
+  text-decoration: none;
+	@media (orientation: portrait) {
+		padding: 1.5rem;
+		font-size: 1.2rem;
+	}
+}
+
+
+/* Lets Talk */
+
+.letstalk {
+	border-top: 1px solid var(--muted);
+	padding: 16rem 0;
+	margin-top: 8rem;
+	text-align: center;
+	@media (orientation: portrait) {
+			padding: 16rem 0;
+		}
+	.squeezer {
+		width: 30%;
+		display: inline-block;
+		@media (orientation: portrait) {
+			width: 100%;
+		}
+	}
+	
+	h1 {
+		font-family: "Merriweather", serif;
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+}
+
+
+/* Work Page */
+
+.post .centercol {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	> * {
+		grid-column: 3 / 10
+	}
+	figure {
+		margin: 3vw 0;
+		font-size: 1.2rem;
+		grid-column: span 12;
+		img, video, iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+	}
+	figure.small {
+		grid-column: 4 / 9
+	}
+	figure.medium {
+		grid-column: 3 / 10;
+	}
+	figure iframe {
+		aspect-ratio: 16 / 9;
+	}
+	@media (orientation: portrait) {
+	> * {
+		grid-column: span 12;
+		}
+	}
+}
+
+

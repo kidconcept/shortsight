@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BasicBitch.astro';
+const pageTitle = "Digital Design Project Lead";
+
+import Thumb from '../components/Thumb.astro';
+const allPosts = Object.values(import.meta.glob('./work/**/*.md', { eager: true }));
+---
+
+<BaseLayout pageTitle={pageTitle}>
+
+
+	<div class="grid works">
+	  	{allPosts.map((post: any) => 
+	  		<Thumb 
+	  			url={post.url} 
+	  			title={post.frontmatter.title} 
+	  			src={post.frontmatter.src} 
+	  			alt={post.frontmatter.alt} 
+	  			category={post.frontmatter.category} 
+	  			company={post.frontmatter.company}
+	  			summary={post.frontmatter.summary}
+	  		/>
+	  	)}
+	</div>
+
+</BaseLayout>
