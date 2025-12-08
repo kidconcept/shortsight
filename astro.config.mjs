@@ -8,5 +8,5 @@ export default defineConfig({
     remarkPlugins: [remarkDirective, remarkAddClasses],
   },
   site: 'https://kidconcept.github.io',
-  base: '/'
+  base: '/shortsight/'
 });
