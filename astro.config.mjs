@@ -7,5 +7,6 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkDirective, remarkAddClasses],
   },
-  site: 'https://github.com/kidconcept/shortsight.git',
+  site: 'https://kidconcept.github.io',
+  base: '/'
 });
