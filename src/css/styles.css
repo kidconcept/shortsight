@@ -93,12 +93,12 @@ footer {
 }
 
 header {
-	/*background: url('/src/media/header.jpg') no-repeat center/cover;*/
+	/*background: url('/media/header.jpg') no-repeat center/cover;*/
 	border-bottom: 1px solid var(--muted);
 }
 
 footer {
-	background: url('/src/media/footer.jpg') no-repeat center/cover;
+	background: url('/media/footer.jpg') no-repeat center/cover;
 }
 
 .centercol {

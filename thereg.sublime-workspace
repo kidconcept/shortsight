@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"grid",
+				"grid-template-columns"
+			],
+			[
 				"ali",
 				"alignments"
 			],
@@ -48,10 +52,68 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos"
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/.github",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/.github/workflows",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/dist",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/public",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/public/work",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/components",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/css",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/layouts",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work"
 	],
 	"file_history":
 	[
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/dist/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/dist/work/99pi/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/css/styles.css",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/index.astro",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/components/Thumb.astro",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/.github/workflows/deploy.yml",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/agilenonprofit.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/astro.config.mjs",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/advisorsoftware.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/weekapaug.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/sweetclocks.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/rigonauts.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/research.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/piper.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/people.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/mystory.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/morganstanley.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/mmf.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/mantasponsorship.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/exhibition.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/icsj.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/enrollment123.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/digital.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/99pi.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/html to md/html_to_md/story.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/html to md/html_to_md/sweetclocks.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/rigonauts/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/research/index.html",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/node_modules/fontkit/src/glyph/TTFGlyphEncoder.js",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/layouts/BasicBitch.astro",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/layouts/PlainPost.astro",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/mmf/mmf.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/morganstanley/morganstanley.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/piper/piper.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/remark/addClasses.js",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/enrollment123/enrollment123.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work.astro",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/components/Header.astro",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/components/Footer.astro",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/ms.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/post-2.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/work/post-1.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/posts/post-2.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/pages/posts/post-1.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/posts/post-2.md",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/content/config.ts",
+		"/Users/danvallentyne/Dropbox/Design/Get Some/reportfolio/theregular/Astro/civil-chaos/src/content/work/post-1.md",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/99pi/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/advisorsoftware/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/agilenonprofit/index.html",
@@ -62,7 +124,6 @@
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/ms/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/people/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/pipercode/index.html",
-		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/rigonauts/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/seaserp/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/sweetclocks/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/cases/weekapaug/index.html",
@@ -71,7 +132,6 @@
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/digital/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/exhibition/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/physical/index.html",
-		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/research/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/story/index.html",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/css/vars.css",
 		"/Users/danvallentyne/Dropbox/Design/Get Some/portfolio/kidconcept.github.io/css/style.css",
@@ -109,7 +169,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -123,6 +183,73 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"src=\"/src",
+			"intercontinental-san-juan/img",
+			" ",
+			"<figure>",
+			"pacific-grove-exhibit/img",
+			" ",
+			"<figure>",
+			"digital-product-overview/img",
+			" ",
+			"civicactions-guide/",
+			" ",
+			"advisor-software-design-system/img",
+			" ",
+			"99-invisible-website",
+			" ",
+			"/img",
+			"manta-ray-sponsorship",
+			" ",
+			"people-magazine-app",
+			"<figure>",
+			"my-",
+			"\\",
+			"-inn",
+			"\\'",
+			"site",
+			"weekapaug-inn",
+			"video",
+			"div",
+			"figure",
+			"-product",
+			"max-width: 100",
+			"works",
+			"intro",
+			"enrollment123/img/",
+			"morganstanley/img/",
+			"piper/img/",
+			"/mmf/img/",
+			"display: grid",
+			"display:grid",
+			"piper",
+			"/media/",
+			"img",
+			"row-gap",
+			"grid",
+			"company",
+			"media",
+			"B2BA49",
+			"fff",
+			"h1",
+			"span",
+			"frontmatter",
+			"company",
+			"category",
+			"alt",
+			"src",
+			"title",
+			"alt",
+			"thumb.data.",
+			"blog",
+			"--softlines",
+			"person",
+			"images",
+			"src",
+			"url",
+			"</li>",
+			"<li>",
+			"ul"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -153,7 +280,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 36.0
 	},
 	"layout":
 	{
@@ -198,6 +325,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"then",
+				"node_modules/fontkit/src/glyph/TTFGlyphEncoder.js"
+			]
 		],
 		"width": 0.0
 	},
@@ -227,7 +358,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 181.0,
+	"side_bar_width": 234.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
