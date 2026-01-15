@@ -254,24 +254,22 @@ footer {
 			display: block;
 			position: relative;
 			.hoverbutton {
-				height: 11rem;
+				height: 5rem;
         position: absolute;
-        top: 0;
+        bottom: 0;
         display: block;
-        width: 100%;
         color: var(--knockout);
         text-decoration: none;
-        font-size: 4rem;
+        font-size: 2rem;
         display: flex;
-  			align-items: center;
-  			border-top-left-radius: var(--corners);
-  			border-top-right-radius: var(--corners);
+        align-items: center;
+        border-bottom-left-radius: var(--corners);
   			@media (orientation: portrait) {
   				height: 7rem;
   				font-size: 2rem;
   			}
   			span {
-  				padding: 0 0 0 3rem;
+  				padding: 3rem;
   			}
 			}
 			img {
