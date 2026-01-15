@@ -6,6 +6,7 @@ alt: 'Early career photoshoot'
 company: 'Various'
 category: 'Biography'
 slug: 'story'
+order: 30
 summary: "My first San Francisco studio job at BAYCAT involved producing graphic arts for NGOs, public works, and social justice campaigns, including directing photo shoots and managing print/digital campaigns. I also led their digital skills program, taught programming, and started the school's games program. This era shifted my focus to digital works, web applications, and native apps, including building a global volunteer network for a startup."
 ---
 

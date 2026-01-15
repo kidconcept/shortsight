@@ -6,6 +6,7 @@ alt: 'View of the hanging butterfly sculpture in the museum entryway.'
 company: 'Pacific Grove Museum of Natural History'
 category: 'Exhibition'
 slug: 'pacific-grove-exhibition-design'
+order: 20
 summary: "Chosen to redesign the entry exhibit for the Pacific Grove Museum of Natural History, I remodeled the complex entry glass house, bridge crossing, and small shop space. My work included proposing the general layout, procuring new artifacts, and writing exhibit copy. The centerpiece is a scale model 1000 butterfly visualization depicting the dramatic change in the Monarch butterfly population over time."
 ---
 

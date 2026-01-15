@@ -6,6 +6,7 @@ alt: 'Sweetclocks application running on a laptop'
 company: 'Sweetclocks'
 category: 'Digital Product'
 slug: 'sweetclocks'
+order: 40
 summary: "Frequent global travel and remote clients require constant time juggling, a frustration shared by many colleagues since native apps are limited to major cities. Scheduling around remote locations like Punto d'Ouro or Mabul is difficult. While Google provides accurate but non-persistent results, I needed an application that could find times for any location globally and permanently remember all my key timezones for efficient scheduling."
 ---
 

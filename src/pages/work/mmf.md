@@ -6,6 +6,7 @@ alt: 'Mantas for the masses.'
 company: 'for the Marine Megafauna Foundation'
 category: 'Nonprofit'
 slug: 'mmf'
+order: 20
 summary: "Mozambique's waters are frequented by iconic megafauna like whale sharks and manta rays. Dive centers in Tofo, Mozambique, collected several years of sightings data for the Marine Megafauna Foundation. To analyze this data, my colleague required an interactive visualization built using plotly.js, for which I was asked to design the complete project."
 ---
 

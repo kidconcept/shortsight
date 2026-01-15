@@ -1,13 +1,9 @@
 ---
-import BaseLayout from '../layouts/BasicBitch.astro';
+import BaseLayout from '../../layouts/BasicBitch.astro';
 const pageTitle = "Digital Design Project Lead";
 
-import Thumb from '../components/Thumb.astro';
-const allPosts = Object.values(
-  import.meta.glob('./work/**/*.md', { eager: true })
-).sort((a: any, b: any) => {
-  return a.frontmatter.order - b.frontmatter.order
-})
+import Thumb from '../../components/Thumb.astro';
+const allPosts = Object.values(import.meta.glob('../work/**/*.md', { eager: true }));
 ---
 
 <BaseLayout pageTitle={pageTitle}>

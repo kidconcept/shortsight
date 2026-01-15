@@ -6,6 +6,7 @@ alt: 'Corporations love skyscrapers.'
 company: 'for Morgan Stanley'
 category: 'Enterprise'
 slug: 'morganstanley'
+order: 5
 summary: "Supporting a large financial firm with over 70,000 employees, I delivered new custom software designs at twice the expected pace. My strong communication skills bridged the gap between business and development, ensuring needs were exceeded while minimizing development effort. This efficiency allowed me to build strong relationships with stakeholders who valued rapid, low-cost application design."
 ---
 

@@ -6,6 +6,7 @@ alt: 'Redesign led to key tasks within this Morgan Stanley Travel application ta
 company: 'Product Design Methodology'
 category: 'Digital'
 slug: 'digital-product-design-process'
+order: 20
 summary: "With over a decade in digital product design, I've mentored designers, managed development, and led research. At Morgan Stanley, my design reduced critical task time by 60% and development effort by 20%, increasing user satisfaction by 75%. My work, including growing Dive the Data globally, has processed billions in transactions and served millions of users."
 ---
 

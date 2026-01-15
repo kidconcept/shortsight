@@ -6,6 +6,7 @@ alt: 'Rigonauts Game User Interface Mockup'
 company: 'Engient'
 category: 'Gaming'
 slug: 'rigonauts'
+order: 40
 summary: "I was excited to design the user interface (UI) for Rigonauts, a PC game by Engient. Since the game was nearing completion, I quickly onboarded using their version control software. The core challenge was integrating the UI with the existing game assets, matching the style established by the game artist to ensure a cohesive final product."
 ---
 

@@ -6,6 +6,7 @@ alt: 'A desktop mockup of the Intercontinental San Juan hotel website design.'
 company: 'Intercontinental Hotel, San Juan'
 category: 'Digital'
 slug: 'intercontinental-san-juan-website'
+order: 90
 summary: "The Intercontinental Hotel in San Juan commissioned a new website design to capture the unique, luxury feel of the Caribbean. The project involved producing new content during a site visit, which the local hotel team praised for accurately communicating the property's distinct vibe and local character."
 ---
 

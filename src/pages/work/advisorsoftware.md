@@ -6,6 +6,7 @@ alt: 'Hero image for the Advisor Software design system.'
 company: 'Advisor Software'
 category: 'Digital'
 slug: 'advisor-software-design-system'
+order: 10
 summary: "The financial technology veteran, Advisor Software, powers back-end operations for major investment firms like Charles Schwab and TD Ameritrade, providing tools for Portfolio Rebalancing, Investment Analytics, and Proposal Generation. Facing rapid change, the company launched a first-to-market API strategy. We helped them lead this transition by building a flexible design system to support their modernized financial software product offerings."
 ---
 

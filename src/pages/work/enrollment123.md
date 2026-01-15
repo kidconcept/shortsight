@@ -6,6 +6,7 @@ alt: 'A billion dollar interface.'
 company: 'for Enrollment123'
 category: 'Fintech'
 slug: 'enrollment123'
+order: 10
 summary: "I was approached by the owners of a successful insurance CRM to modernize their application's look, feel, and functionality. Over ten months, we implemented a new API-based front-end. Given the system handles billions of dollars annually and supports long-standing client relationships, maintaining heavily used features and ensuring a smooth transition were critical priorities."
 ---
 

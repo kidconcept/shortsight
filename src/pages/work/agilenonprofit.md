@@ -6,6 +6,7 @@ alt: 'Tablet and phone displaying the CivicActions client guide.'
 company: 'CivicActions'
 category: 'Digital'
 slug: 'civicactions-client-guide-design'
+order: 50
 summary: "CivicActions is a rad group of web makers who work with public good clients. They work with big government organizations, NGOs, and Nonprofits and have tens of thousands of hours of web expertise in-house. Their clients trust CivicActions to have the best technology and the best process, and back in 2011 many of their clients had never heard of Agile development. This guide was to help them understand the process."
 ---
 

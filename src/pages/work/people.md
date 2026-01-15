@@ -6,6 +6,7 @@ alt: 'Wireframe designs for the People Magazine mobile app'
 company: 'People Magazine'
 category: 'Digital'
 slug: 'people-magazine-mobile-app-design'
+order: 90
 summary: "Contracted by Prophet.com, I designed several mobile applications and a mobile website for People magazine. We focused on two primary concepts: a minigames pack and a celebrity news tracker. I delivered comprehensive wireframes and high-fidelity key screen interfaces for both applications, which were then successfully pitched to the People team."
 ---
 

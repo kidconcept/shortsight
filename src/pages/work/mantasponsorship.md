@@ -6,6 +6,7 @@ alt: 'A mac desktop showing the Manta Ray Sponsorship program website.'
 company: 'Marine Megafauna Foundation'
 category: 'Conservation'
 slug: 'mantasponsorship'
+order: 20
 summary: "Marine Megafauna Foundation (MMF) is dedicated to Scientific Research, Public Education, and Conservation of marine megafauna like whale sharks and manta rays. Their researchers expand knowledge, their conservation team helps locals in Mozambique protect heritage, and their education team fosters the next generation's love for the ocean. "
 ---
 

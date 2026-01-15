@@ -6,6 +6,7 @@ alt: 'Kids love computers.'
 company: 'for Piper Inc.'
 category: 'Startup'
 slug: 'piper'
+order: 20
 summary: "Programming is now a ubiquitous, essential skill. Piper addresses this with their Computer Kit, empowering children to build their own Raspberry Pi based computer. This hands-on experience allows them to operate, construct, and program electronics, providing a foundational and beneficial understanding of computers and technology for their future."
 ---
 

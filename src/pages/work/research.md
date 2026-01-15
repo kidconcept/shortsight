@@ -6,6 +6,7 @@ alt: 'Quad plot for a paper showing the species at risk'
 company: 'Various Research Collaborations'
 category: 'Research'
 slug: 'research'
+order: 30
 summary: "I support research in ocean sciences and product design, helping a wider audience understand insights that drive policy and development changes. I collect biological and social data, including leading underwater surveys for STINAPA and Reefcheck, and develop new collection equipment/methods. I conduct statistical analysis on data from both traditional science and product design user studies, ensuring rigor and logical conclusions for publication and application. "
 ---
 

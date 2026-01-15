@@ -6,6 +6,7 @@ alt: 'Weekapaug Inn Website Design Mockup'
 company: 'Weekapaug Inn'
 category: 'Web Design'
 slug: 'weekapaug'
+order: 90
 summary: "The Weekapaug Inn, following a major renovation, needed a new guest site reflecting both its rich history and contemporary beauty beside the Quonochontaug salt pond. To understand the Inn's value to its high-praised guests, our team conducted a week-long site visit, experiencing the property firsthand—sitting in lounges, eating, and participating in activities. This collaboration with staff, paired with access to excellent photography, ensured the site accurately captured the experience-driven company's essence and successful launch."
 ---
 
