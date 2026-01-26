@@ -3,6 +3,8 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 import '../css/styles.css';
+
+import { initPanZoom } from '../js/panner.js';
 const { pageTitle } = Astro.props;
 
 ---
@@ -24,5 +26,14 @@ const { pageTitle } = Astro.props;
       <slot />
     </div>
     <Footer />
+  <script>
+    import { initPanZoom } from '../js/panner.js';
+    const viewer = document.getElementById('viewer');
+    const img = document.getElementById('image');
+
+    console.log('before init');
+    initPanZoom(viewer, img);
+    console.log('after init');
+  </script>
   </body>
 </html>

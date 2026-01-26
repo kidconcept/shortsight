@@ -28,6 +28,7 @@ body {
 h1 {
 	font-family: "Merriweather", serif;
   margin-top: 6rem;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -35,6 +36,11 @@ h2 {
 	font-weight: 500;
 	font-size: 3rem;
 	margin-bottom: 0;
+}
+
+.centercol h2 {
+	font-size: 2rem;
+	line-height: 200%;
 }
 
 h3 {
@@ -383,11 +389,12 @@ a.big {
 .post .centercol {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	padding: 3vw 0;
 	> * {
-		grid-column: 3 / 10
+		grid-column: 3 / 10;
+		margin: 1.5vw 0;
 	}
 	figure {
-		margin: 3vw 0;
 		font-size: 1.2rem;
 		grid-column: span 12;
 		img, video, iframe {
@@ -409,6 +416,78 @@ a.big {
 		grid-column: span 12;
 		}
 	}
+	h1 {
+		margin-bottom: 0;
+	}
 }
+
+/* Pan zoom */
+
+.post .centercol .panzoom {
+	grid-column: span 12;
+	aspect-ratio: 16 / 9;
+	padding: 2rem;
+	border: 1px solid #666;
+}
+
+#viewer {
+	width: 100%;
+	height: 100%;
+  background: #666;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+
+#image {
+  transform-origin: 0 0;
+  user-select: none;
+  will-change: transform;
+}
+
+#viewer:active {
+  cursor: grabbing;
+}
+
+.panzoom-controls {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.panzoom-controls button {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.pan-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.zoom-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.pan-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.post .centercol .zoomcaption {
+	grid-column: span 12;
+}
+
 
 
