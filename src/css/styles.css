@@ -79,6 +79,13 @@ a {
 	color: var(--blue);
 }
 
+hr {
+	background-color: var(--muted);
+  margin-bottom: 6rem;
+  height: 1px;
+  border: none;
+}
+
 /* Layouts */
 
 body {
@@ -292,7 +299,7 @@ footer {
 			font-size: 1.1rem;
 		}
 	}
-	.card#morganstanley {
+	.card#travel {
 		order: 1;
 		grid-column: span 10;
 		align-self: end;
