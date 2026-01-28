@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../../layouts/BasicBitch.astro';
+const pageTitle = "Digital Design Project Lead";
+
+import Thumb from '../../components/Thumb.astro';
+const allPosts = Object.values(import.meta.glob('../work/**/*.md', { eager: true }));
+
+const featuredCompanies = [
+  'mmf',
+  'enrollment123',
+  'travel',
+  'research',
+  'piper',
+  'exhibition',
+];
+
+const featuredPosts = allPosts.filter(post =>
+  featuredCompanies.includes(post.frontmatter.slug)
+);
+
+---
+<BaseLayout pageTitle={pageTitle}>
+	<div class="grid">
+		<div class="intro">
+			<p>Hello Collective.</p> 
+			<p>I am a design leader who's work in finance has spanned fast growing startups and large corporations. In my career I've built design systems from the ground up, I've owned projects from inception to production, I've led research, managed small teams, and designed product that achieves measured impacts. At Morgan Stanley I led the design that resulted in thousands of hours of saved employee effort. At Enrollment123 I designed workflows that improved retention and increased onboarding by 30%. My background in Development combined with my use of AI tools like Figma Make and Github Copilot have supercharged my output and I'm what used to take weeks I'm now doing in days.
+			</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<h3>Some of my work</h3>
+
+	<div class="grid works">
+	  	{featuredPosts.map((post: any) => 
+	  		<Thumb 
+	  			url={post.url} 
+	  			title={post.frontmatter.title} 
+	  			src={post.frontmatter.src} 
+	  			alt={post.frontmatter.alt} 
+	  			category={post.frontmatter.category} 
+	  			company={post.frontmatter.company}
+	  			summary={post.frontmatter.summary}
+	  		/>
+	  	)}
+	</div>
+
+	<div class="grid quotes">
+		<h3>What my coworkers are saying</h3>
+		<div class="card">
+			<div class="pic">
+				<img src="/media/demane.jpg">
+			</div>
+			<div class="text">
+				<p class="quote">“Dan is a brilliant UX developer, and a great person. I have had the opportunity to work with Dan over a few years on a number of projects and he is often the most valuable member of the project team.”</p>
+				<p class="name">Demane Rodney</p>
+				<p class="role">Executive Director at Morgan Stanley</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="pic">
+				<img src="/media/ben.jpg">
+			</div>
+			<div class="text">
+				<p class="quote">“I know him as someone who I can count on to deliver not only excellent design solutions, but powerful digital strategies to back them up. He’s a pleasure to work with, and will deliver the goods every time.”</p>
+				<p class="name">Ben Thompson</p>
+				<p class="role">UX Director at Kaiser Permanente</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="grid skills">
+		<div class="card">
+			<img src="/media/goodwithpeople.jpg">
+			<h2>Good with people</h2>
+			<p>Software requires aligning diverse skills and expertise across business, technology, and marketing. A natural collaborator, I work across the organization to integrate these perspectives into a shared product vision. Great software comes from great teams, and my approach builds and amplifies great teams.</p>
+		</div>
+		<div class="card">
+			<img src="/media/AIDriven.jpg">
+			<h2>AI driven</h2>
+			<p>In 2022 I began using AI to accelerate the analysis of large environmental datasets. Today, the diversity of AI tools has exploded and I use them in every step of software development. From engineering and design to marketing and operations, I'm now getting more done than ever.</p>
+		</div>
+		<div class="card">
+			<img src="/media/realresearch.jpg">
+			<h2>Real research</h2>
+			<p>My background in research informs my design process—from the collection and analysis of complex data to the synthesis and communication of results. This drives a clear, rational understanding of product performance. I quantify how features serve different audiences to help teams focus on weak areas, reinforce strengths, and invest resources efficiently.</p>
+		</div>
+		<div class="card">
+			<img src="/media/multisector.jpg">
+			<h2>Multi-sector experience</h2>
+			<p>My background is broad. I’ve worked from finance to education and from environmental research to human health. This diversity of insight and experience means I have more solutions available and produce more creative works. Through the integration of insights across industries, I deliver more competitive results.</p>
+		</div>
+	</div>
+
+	<div class="letstalk" id="contact">
+		<h1>Please reach out I'd love to talk more about your product and how my extensive financial product expertise could help.</h1>
+		<p>I’m available via <a href="mailto:hello@danvallentyne.com">email</a>.</p>
+	</div>
+
+
+
+</BaseLayout>
