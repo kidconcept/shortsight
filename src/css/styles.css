@@ -2,12 +2,13 @@
   --text: #000;
   --knockout: #fff;
   --muted: #828282;
+  --screen: #82828288;
   --purple: #7C5293CC;
   --green: #5ABA49CC;
   --blue: #1189D8CC;
   --yellow: #B2BA49CC;
 
-  --corners: 1rem;
+  --corners: .8rem;
 }
 
 
@@ -40,7 +41,6 @@ h2 {
 
 .centercol h2 {
 	font-size: 2rem;
-	line-height: 200%;
 }
 
 h3 {
@@ -49,18 +49,91 @@ h3 {
 	text-align: center;
 }
 
+/* Header nav menu */
+
 nav a {
 	color: var(--text);
 	text-decoration: none;
 	padding: 1rem;
-	&:hover {
-		text-decoration: underline;
-	}
 }
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.hamburger {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+@media (orientation: portrait) {
+
+	header.navhead {
+		height: 4vh;
+		border-bottom: none;
+		width: 90%;
+		margin: 2vh auto 0;
+		&.open {
+			.navcontainer .nav {
+				display: inline;
+			}
+			.hamburger {
+				span:nth-child(1) {
+					transform: translateY(8px) rotate(45deg);
+				}
+
+				span:nth-child(2) {
+					opacity: 0;
+				}
+
+				span:nth-child(3) {
+					transform: translateY(-8px) rotate(-45deg);
+				}
+			}
+		}
+	}
+
+	header.navhead .navcontainer {
+		display: flex;
+	  flex-direction: row;
+	  align-items: center;
+	  .nav {
+			display: none;
+			a {
+				font-size: 1.3rem;
+				padding: 0.8rem;
+			}
+		}
+	}
+
+	.hamburger {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 24px;
+		height: 18px;
+		margin-right: 1.4rem;
+	}
+
+	.hamburger span {
+		height: 2px;
+		width: 100%;
+		background: var(--text);
+		display: block;
+	}
+
+}
+
+/* Footer nav menu */
 
 footer nav a {
 	color: var(--knockout);
 }
+
+/* Home Content */
+
 
 .intro {
 	font-size: 2.2rem;
@@ -140,6 +213,12 @@ footer {
 	}
 }
 
+@media (orientation: portrait) {
+	#homereel {
+		display: none;
+	}
+}
+
 .skills {
 	margin: 12vw 0;
 }
@@ -165,6 +244,10 @@ footer {
 	margin: 4rem 0;
 	h3 {
 		grid-column: span 12;
+		@media (orientation: portrait) {
+			text-align: left;
+			grid-column: span 10;
+		}
 	}
 	.card {
 		grid-column: span 6;
@@ -258,37 +341,63 @@ footer {
 	}
 }
 
-.works.featured {
-	grid-template-columns: repeat(16, 1fr);
+/* Featured works grid sizing */
+
+.featured {
+	grid-template-columns: repeat(20, 1fr);
+	:nth-child(1) {
+		grid-column: span 12;
+		align-self: end;
+	}
+	:nth-child(2) {
+		grid-column: span 8;
+		align-self: end;
+	}
+	:nth-child(3) {
+		grid-column: span 8;
+	}
+	:nth-child(4) {
+		grid-column: span 12;
+	}
+	@media (orientation: portrait) {
+		.card {
+			grid-column: span 20;
+		}
+	}
+}
+
+/* Featured works card styles */
+
+.featured {
 	.card {
 		display: block;
 		margin-bottom: 0;
 		a {
 			display: block;
 			position: relative;
-			.hoverbutton {
-				height: 5rem;
-        position: absolute;
-        bottom: 0;
-        display: block;
-        color: var(--knockout);
-        text-decoration: none;
-        font-size: 2rem;
-        display: flex;
-        align-items: center;
+			p {
+				display: block;
+			  position: absolute;
+			  bottom: 0;
+			  color: var(--knockout);
+			  background-color: var(--screen);
+			  font-weight: 200;
+			  font-size: 1.4rem;
+			  margin: 0;
+				padding: 0.4rem 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
         border-bottom-left-radius: var(--corners);
-  			@media (orientation: portrait) {
-  				height: 7rem;
-  				font-size: 2rem;
-  			}
-  			span {
-  				padding: 3rem;
-  			}
+        border-bottom-right-radius: var(--corners);
 			}
 			img {
 				max-width: 100%;
 				display: block;
 				border-radius: var(--corners);
+			}
+			:hover p {
+				background-color: muted;
+				animation: ;
 			}
 		}
 		.readon {
@@ -298,49 +407,16 @@ footer {
 			margin-top: 1.2vw;
 			font-size: 1.1rem;
 		}
-	}
-	.card#travel {
-		order: 1;
-		grid-column: span 10;
-		align-self: end;
-		.hoverbutton {
-			background-color: var(--purple);
-		}
-	}
-	.card#enrollment123 {
-		order: 2;
-		grid-column: span 6;
-		align-self: end;
-		.hoverbutton {
-			background-color: var(--yellow);
-		}
-	}
-	.card#piper {
-		order: 3;
-		grid-column: span 6;
-		.hoverbutton {
-			background-color: var(--green);
-		}
-	}
-	.card#mmf {
-		order: 4;
-		grid-column: span 10;
-		.hoverbutton {
-			background-color: var(--blue);
-		}
-	}
-	@media (orientation: portrait) {
-		.card#morganstanley,
-		.card#enrollment123,
-		.card#piper,
-		.card#mmf {
-			grid-column: span 16;
+		h3 {
+			text-align: left;
+		  margin: 0;
+		  line-height: 100%;
 		}
 	}
 }
 
 div.readmore {
-	margin: 16rem 0;
+	margin: 9rem 0;
 	text-align: center;
 	@media (orientation: portrait) {
 		margin: 8rem 0;

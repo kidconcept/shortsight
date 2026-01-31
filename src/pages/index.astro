@@ -2,19 +2,24 @@
 import BaseLayout from '../layouts/BasicBitch.astro';
 const pageTitle = "Digital Design Project Lead";
 
-import Thumb from '../components/Thumb.astro';
+import Featured from '../components/Featured.astro';
 const allPosts = Object.values(import.meta.glob('./work/**/*.md', { eager: true }));
 
 const featuredCompanies = [
+	'travel',
   'mmf',
   'enrollment123',
   'piper',
-  'travel'
 ];
 
-const featuredPosts = allPosts.filter(post =>
-  featuredCompanies.includes(post.frontmatter.slug)
-);
+const featuredPosts = allPosts
+  .filter(post =>
+    featuredCompanies.includes(post.frontmatter.slug)
+  )
+  .sort((a, b) =>
+    featuredCompanies.indexOf(a.frontmatter.slug) -
+    featuredCompanies.indexOf(b.frontmatter.slug)
+  );
 
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -32,6 +37,7 @@ const featuredPosts = allPosts.filter(post =>
 	  playsinline
 	  poster="/media/hero.jpg"
 	  style="width:100%; height:auto;"
+	  id="homereel"
 	>
 	  <source src="/media/reel.mp4" type="video/mp4" />
 	</video>
@@ -83,9 +89,9 @@ const featuredPosts = allPosts.filter(post =>
 		</div>
 	</div>
 
-	<div class="grid works featured">
+	<div class="grid featured">
 	  	{featuredPosts.map((post: any) => 
-	  		<Thumb 
+	  		<Featured 
 	  			url={post.url} 
 	  			title={post.frontmatter.title} 
 	  			src={post.frontmatter.src} 

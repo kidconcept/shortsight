@@ -1,9 +1,24 @@
-<header class="header">
+<header class="navhead">
 	<div class="navcontainer">
-		<nav>
+		<div class="hamburger" aria-label="Toggle menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<nav class="nav">
 			<a href="/">Home</a>
 			<a href="/work">Work</a>
 			<a href="/#contact">Contact</a>
 		</nav>
+
+		<script>
+			
+			  document.querySelector(".hamburger").addEventListener("click", () => {
+			    document.querySelector(".navhead").classList.toggle("open");
+			  });
+			
+		</script>
+
 	</div>
 </header>
