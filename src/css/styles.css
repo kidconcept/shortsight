@@ -135,7 +135,7 @@ footer nav a {
 /* Home Content */
 
 
-.intro {
+.intro, .hello {
 	font-size: 2.2rem;
 }
 
@@ -204,13 +204,17 @@ footer {
 	grid-auto-rows: auto;
 }
 
-.intro {
+.intro, .hello {
 	grid-column: 3 / span 8;
 	margin: 12vw 0;
 	@media (orientation: portrait) {
 		margin: 0;
 		grid-column: span 12;
 	}
+}
+
+.hello {
+	margin-top: 4vw;
 }
 
 @media (orientation: portrait) {
