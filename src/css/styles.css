@@ -499,7 +499,9 @@ a.big {
 		aspect-ratio: 16 / 9;
 	}
 	@media (orientation: portrait) {
-	> * {
+	> *,
+	figure.small,
+	figure.medium  {
 		grid-column: span 12;
 		}
 	}
