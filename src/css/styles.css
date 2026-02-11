@@ -478,12 +478,13 @@ a.big {
 	grid-template-columns: repeat(12, 1fr);
 	padding: 3vw 0;
 	> * {
-		grid-column: 3 / 10;
+		grid-column: 3 / 11;
 		margin: 1.5vw 0;
 	}
-	figure {
+	figure, .zoomcaption {
 		font-size: 1.2rem;
 		grid-column: span 12;
+		font-style: italic;
 		img, video, iframe {
         width: 100%;
         max-width: 100%;
@@ -493,7 +494,7 @@ a.big {
 		grid-column: 4 / 9
 	}
 	figure.medium {
-		grid-column: 3 / 10;
+		grid-column: 3 / 11;
 	}
 	figure iframe {
 		aspect-ratio: 16 / 9;
@@ -517,6 +518,7 @@ a.big {
 	aspect-ratio: 16 / 9;
 	padding: 2rem;
 	border: 1px solid #666;
+	margin-bottom: 0;
 }
 
 #viewer {
@@ -576,6 +578,7 @@ a.big {
 
 .post .centercol .zoomcaption {
 	grid-column: span 12;
+	margin-top: 0;
 }
 
 

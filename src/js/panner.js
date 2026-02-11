@@ -6,8 +6,15 @@ export function initPanZoom(viewer, img, options = {}) {
     maxScale: baseMaxScale = 6,
     zoomSpeed = 0.004,
     buttonZoomFactor = 1.2,
-    buttonPanStep = 80
+    buttonPanStep = 80,
   } = options;
+
+  /* read the desired position of the image */
+  const container = viewer.closest('.panzoom');
+  const initialPosition =
+    container?.classList.contains('top-left')
+      ? 'top-left'
+      : 'center';
 
   // ---- State --------------------------------------------------
   let scale = 1;
@@ -103,8 +110,17 @@ export function initPanZoom(viewer, img, options = {}) {
     scale = (rect.width * initialWidthRatio) / img.naturalWidth;
     minScale = (rect.width * minWidthRatio) / img.naturalWidth;
 
-    translateX = (rect.width - img.naturalWidth * scale) / 2;
-    translateY = 0;
+    const scaledWidth = img.naturalWidth * scale;
+    const scaledHeight = img.naturalHeight * scale;
+
+    if (initialPosition === 'top-left') {
+      translateX = 0;
+      translateY = 0;
+    } else {
+      // default center
+      translateX = (rect.width - scaledWidth) / 2;
+      translateY = (rect.height - scaledHeight) / 2;
+    }
 
     initialState = { scale, translateX, translateY };
     update();

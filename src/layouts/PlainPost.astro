@@ -26,14 +26,14 @@ const { pageTitle } = Astro.props;
       <slot />
     </div>
     <Footer />
-  <script>
-    import { initPanZoom } from '../js/panner.js';
-    const viewer = document.getElementById('viewer');
-    const img = document.getElementById('image');
+    <script>
+      import { initPanZoom } from '../js/panner.js';
+      const viewer = document.getElementById('viewer');
+      const img = document.getElementById('image');
 
-    console.log('before init');
-    initPanZoom(viewer, img);
-    console.log('after init');
-  </script>
+      console.log('before init');
+      initPanZoom(viewer, img);
+      console.log('after init');
+    </script>
   </body>
 </html>
