@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.figma.site	TRUE	/	FALSE	1999999999	__cf_bm	RsUPzmNY5xz28lLFgOQbURuQV8CdX1TFj3jsq.QqyFY-1770912265-1.0.1.1-NTMjeJa8oVj3kD2JrNK.0UjEFxZBfhdan.X0WFSyribDR.YOgli9p2A5rxd5EnqscD6.jxizZ.W8a6NeONKdWMjBANgDVzNkrFz4p65Jj0U
+rally-portal-88853330.figma.site	TRUE	/	FALSE	1999999999	SameSite	None
+figma.site	TRUE	/	FALSE	1999999999	__cf_bm	rBZO3o1nb3DhMBNU7AKb91hnFkO3APRF7_wMxqARroY-1770912266.1186333-1.0.1.1-Z0ujLJcBjwJTLw2YVOzJGvbEGCqXlyYtd1LsIQubvZa9iC24mx9jM07H9tF9W_C7SAxt4YN95jCgKtsQz0Mn7IJLBd.a.Nmt7GN39n8iczKkq_mYMt647SEfCW0C1OH0
+
