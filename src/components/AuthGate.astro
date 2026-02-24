@@ -1,0 +1,18 @@
+---
+// AuthGate — runs before page paint and redirects to /password if not authenticated.
+// Edit src/data/users.ts to change the password hash or authorized usernames.
+import { PASSWORD_HASH, AUTHORIZED_USERS } from '../data/users.ts';
+---
+<script is:inline define:vars={{ HASH: PASSWORD_HASH, USERS: AUTHORIZED_USERS }}>
+  (function () {
+    var path = window.location.pathname;
+    // Don't redirect on the password page itself
+    if (path === '/password' || path === '/password/') return;
+    var storedAuth = sessionStorage.getItem('auth');
+    var storedUser = (sessionStorage.getItem('auth_user') || '').toLowerCase();
+    var validUsers = USERS.map(function (u) { return u.toLowerCase(); });
+    if (storedAuth !== HASH || !validUsers.includes(storedUser)) {
+      window.location.replace('/password?from=' + encodeURIComponent(path));
+    }
+  })();
+</script>

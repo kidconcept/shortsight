@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PlainPost.astro
+layout: ../../layouts/Password.astro
 title: 'Booking Business Travel'
 src: '/work/travel/thumb.jpg'
 alt: 'Fly finance.'

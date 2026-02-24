@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PlainPost.astro
+layout: ../../layouts/Password.astro
 title: 'Building Due Diligence'
 src: '/work/idiligence/thumb.png'
 alt: 'Be diligent.'

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PlainPost.astro
+layout: ../../layouts/Password.astro
 title: 'SaaS scaled global'
 src: '/work/morganstanley/thumb.jpg'
 alt: 'Corporations love skyscrapers.'
