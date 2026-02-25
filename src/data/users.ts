@@ -10,5 +10,6 @@ export const PASSWORD_HASH = 'db071f0016bb3d5de2851f37c7577162930b1a28346f29f5a2
 // Authorized usernames (case-insensitive). Add or remove as needed.
 export const AUTHORIZED_USERS: string[] = [
   'morganstanley',
+  'crux',
   'swordfish',
 ];
