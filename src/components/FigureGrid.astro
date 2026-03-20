@@ -1,0 +1,52 @@
+---
+interface Props {
+  columns?: number;
+  class?: string;
+}
+
+const { columns = 3, class: className } = Astro.props;
+---
+
+<div class={`figure-grid figure-grid-${columns} ${className || ''}`}>
+  <slot />
+</div>
+
+<style>
+  .figure-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    grid-column: span 12;
+    margin: 2rem 0;
+    justify-content: center;
+  }
+
+  .figure-grid-2 :global(figure) {
+    flex: 0 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+
+  .figure-grid-3 :global(figure) {
+    flex: 0 1 calc(33.333% - 1.5rem);
+    max-width: calc(33.333% - 1.5rem);
+  }
+
+  .figure-grid-4 :global(figure) {
+    flex: 0 1 calc(25% - 1.5rem);
+    max-width: calc(25% - 1.5rem);
+  }
+
+  /* Reset figure margins when inside FigureGrid */
+  .figure-grid :global(figure) {
+    margin: 0;
+  }
+
+  @media (orientation: portrait) {
+    .figure-grid-2 :global(figure),
+    .figure-grid-3 :global(figure),
+    .figure-grid-4 :global(figure) {
+      flex: 0 1 100%;
+      max-width: 100%;
+    }
+  }
+</style>

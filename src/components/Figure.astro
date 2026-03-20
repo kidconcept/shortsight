@@ -1,0 +1,22 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  caption: string;
+  class?: string;
+  lightbox?: boolean;
+}
+
+const { src, alt, caption, class: className, lightbox = false } = Astro.props;
+---
+
+<figure class={className}>
+  {lightbox ? (
+    <a href={src} data-glightbox data-description={caption}>
+      <img src={src} alt={alt} />
+    </a>
+  ) : (
+    <img src={src} alt={alt} />
+  )}
+  <figcaption>{caption}</figcaption>
+</figure>

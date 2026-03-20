@@ -4,7 +4,7 @@ const pageTitle = "Digital Design Project Lead";
 
 import Thumb from '../components/Thumb.astro';
 const allPosts = Object.values(
-  import.meta.glob('./work/**/*.md', { eager: true })
+  import.meta.glob('./work/**/*.{md,mdx}', { eager: true })
 ).sort((a: any, b: any) => {
   return a.frontmatter.order - b.frontmatter.order
 })
