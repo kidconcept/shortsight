@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BasicBitch.astro';
+const pageTitle = "Blog";
+
+import BogThumbs from '../components/BogThumbs.astro';
+const allPosts = Object.values(
+  import.meta.glob('./blog/**/*.{md,mdx}', { eager: true })
+).sort((a: any, b: any) => {
+  return new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()
+})
+---
+
+<BaseLayout pageTitle={pageTitle}>
+
+	<div class="blogs">
+	  	{allPosts.map((post: any) => 
+	  		<BogThumbs 
+	  			url={post.url} 
+	  			title={post.frontmatter.title} 
+	  			src={post.frontmatter.src} 
+	  			alt={post.frontmatter.alt} 
+	  			category={post.frontmatter.category} 
+	  			company={post.frontmatter.company}
+	  			summary={post.frontmatter.summary}
+	  			date={post.frontmatter.date}
+	  		/>
+	  	)}
+	</div>
+
+</BaseLayout>

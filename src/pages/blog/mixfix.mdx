@@ -1,13 +1,14 @@
 ---
 layout: ../../layouts/PlainPost.astro
-title: "Vibecoding the energy grid."
+title: "Vibecoding the Energy Grid: Where's Your Power Come From and How Much Does It Cost?"
 src: '/work/mixfix/thumb.jpg'
 alt: 'Mixfix energy tracking application'
-company: 'mixfix'
+company: 'Dan Vallentyne'
 category: 'Digital'
 slug: 'mixfix'
-order: 03
-summary: "A real-time energy mix tracker vibe-coded that shows users their local power sources and pricing by hour. Born from a Work on Climate conversation about renewable energy surpluses, this project explores both the complexity of grid data and the realities of AI-assisted development."
+order: 1
+date: '2026-03-23'
+summary: "I was in a Work on Climate call when it came up that in Sydney, certain hours of the day would soon have free energy due to renewables surplus. The idea of pulling up a website and seeing your local energy mix and price by hour seemed like a useful and fun project. And I was looking for something to vibecode. So I cracked my laptop and built mixfix.zone. A friend told me he was one-shotting project apps off a single prompt. I figured I'd give it a go and got back almost unusable garbage. No real data, just hard-coded invented numbers. No location lookup, no dynamic anything. Turns out where your energy comes from is a deceptively simple question. The US has three major grids subdivided into Balancing Authorities, Zones, and Nodes — a mismatched overlapping pile of regional operators and utilities with no single public source for granular data. I dug into the EIA's open API for the energy mix and Grid Status for zone-level pricing. Meanwhile Claude started generating mock data when the API tripped and failed to tell me. It wasn't until New York was reporting a lot of solar generation that I caught it."
 ---
 import Figure from '../../components/Figure.astro';
 import FigureGrid from '../../components/FigureGrid.astro';

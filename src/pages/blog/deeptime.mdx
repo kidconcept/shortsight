@@ -1,0 +1,62 @@
+---
+layout: ../../layouts/PlainPost.astro
+title: 'Deeptime and the Bonaire Baseline: Streaming coral data to a coral researcher near you.'
+src: '/blog/deeptime/cnat.jpg'
+alt: 'Coral reef in Bonaire'
+company: 'Dan Vallentyne'
+category: 'Research'
+slug: 'deeptime'
+order: 2
+date: '2026-03-31'
+summary: "In 2023 I was living in Bonaire, scuba diving, and looking for a coral research project I could do. I had picked up some photogrammetry skills working with ReefRenewal and figured if I could do small 100 square meter scans in California, why not do 2000 square meter scans in the Caribbean? The answer is because managing that much data is way harder than I thought it would be. TagLab would only let us view tiny parts of each scan, requiring us to slice things up into very inconvenient chunks. And although I was working with STINAPA, the national parks of Bonaire, we didn't have the budget for a fancy cloud server, and our Azure file share kept choking on the 10+ GB scans. We had like 18 of them. The project stalled. Fast forward to now, I'm vibe coding projects left and right and I thought maybe I could build the tool we didn't have back then. So I started pushing Claude around in VSC with a plan I crafted with Gemini. Does this sound crazy? yes. Did it work? yes. Almost none of the original plan survived but I'm now streaming gigabytes of high resolution coral data to a browser near you."
+---
+import Figure from '../../components/Figure.astro';
+
+# Deeptime and the Bonaire Baseline
+
+So in 2023 I was living in Bonaire, scuba diving, and looking for a coral research project I could do. I had picked up some photogrammetry skills working with ReefRenewal on a kelp restoration project. I love ocean science. And apparently I love big data, because I thought if I could do small 100 square meter scans in California, why not do 2000 square meter scans in the Caribbean?
+
+<figure class="medium">
+ <a href="http://34.61.65.156:8081" target="_blank"><img src="/blog/deeptime/map.png" alt="mixfix header"/></a>
+ <figcaption>Streaming high resolution coral data! Still under development</figcaption>
+</figure>
+
+The answer it turns out, is because managing that much data is way harder than I thought it would be. The existing leader in the AI annotation space, TagLab, would only let us view a tiny part of each scan, requiring us to slice up our scans and process them in very inconvenient chunks. And although I was working with STINAPA, the national parks of Bonaire, we didn't have the budget for some fancy cloud server, and the Azure file share we did have access to kept choking on sharing the 10+ GB scans. And we had like 18 of them. So we managed to get a little of the data annotated but the project stalled from there.
+
+<Figure
+  src="/blog/deeptime/diving.JPG"
+  alt="Scuba diving in Bonaire for coral research"
+  caption="Why can't all product design be like this?"
+  class="small"
+  lightbox={true}
+/>
+
+And fast forward to now, I'm still on sabbatical with the design world falling around me because of AI tools and I'm vibe coding projects left and right. I thought, maybe I could build the tool that we didn't have back then. I've always wanted a big data annotation tool that would stream data to researchers around the world. Don't you want that too?
+
+So last week I started pushing Claude around in VSC with a plan that I crafted with Gemini. Does this sound crazy? yes. Did it work? yes.
+
+But almost none of the original plan is intact. Basically the google cloud bucket with titiler is the only remaining part of the stack from that first plan that worked. And that's vibe coding, really any development. Gemini hallucinated a bunch of features that didn't exist and didn't plan for contingencies that we ran into. I spent days building scripts to manage gigabytes of geotiffs, trying to generate valid cog files that would sit on the google bucket Claude provisioned for me. It took us 3 or 4 times to get the titiler configuration correct. And the browse server, which is under development here: <a href="http://34.61.65.156:8081">http://34.61.65.156:8081</a>
+
+<Figure
+  src="/blog/deeptime/cogs.png"
+  alt="Cloud optimized geotiff generation debugging"
+  caption="I spent a lot of time debugging on this cog (cloud optimized geotiff) generation script before I realized that Claude had generated a bunch of code that wasn't even necessary. Providing a strict outline really helped us get decent cogs."
+  class="medium"
+  lightbox={true}
+/>
+
+While Gemini hallucinated features and Claude generated hundreds of lines of unnecessary code, I patiently guided my team of agents down a path that finally led to working software. And I think this is because I have broad experience and domain specific expertise. This is going to be the path forward for designers and developers, I think this [Wall Street Journal article](https://www.wsj.com/articles/the-increasing-demand-for-hybrid-t-shaped-workers-01574719208) basically describes what I'm doing on this project. Before AI it would have been impossibly complex for me to build this tool and have it stream gigabytes of high resolution coral data to you. But now, with care, I'm on a path to empower researchers. I mean, it's still a prototype but I don't see anything stopping me.
+
+<Figure
+  src="/blog/deeptime/sickcoral.jpg"
+  alt="Stony Coral Tissue Loss Disease on Bonaire reef"
+  caption="This is why I'm doing this, corals like this are dying at an alarming rate. This coral is half dead, the white skeleton exposed underneath the tissue."
+  class="medium"
+  lightbox={true}
+/>
+
+And why am I doing this? Because in 2023 Stony Coral Tissue Loss Disease hit the reef in Bonaire. The data that we collected at that time we can never get again because the disease killed such a large portion of the reef, hitting certain species particularly hard. This archive represents a window into a time that we won't forget. And the hope is that one day, future generations will return the reef to its previous glory.
+
+<a href="https://github.com/kidconcept/deeptime">View the project on Github</a>
+
+

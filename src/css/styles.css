@@ -302,6 +302,11 @@ footer {
 	.company {
 		margin: 0;
 	}
+	.date {
+		margin: 0;
+		font-size: 0.85rem;
+		color: var(--muted);
+	}
 	a {
 		color: var(--blue);
   	font-size: 1.7rem;
@@ -341,6 +346,64 @@ footer {
 			.text {
 				grid-column: span 12;
 			}
+		}
+	}
+}
+
+/* Blog */
+
+.blogs {
+	max-width: 960px;
+	margin: 6vw auto;
+	.card {
+		columns: 2;
+		column-gap: 3vw;
+		margin-bottom: 6vw;
+		padding-bottom: 4vw;
+		border-bottom: 1px solid var(--muted);
+		.thumb {
+			display: block;
+			break-inside: avoid;
+			margin-bottom: 1rem;
+			overflow: hidden;
+			img {
+				width: 100%;
+				display: block;
+				border-radius: var(--corners);
+			}
+		}
+		.meta {
+			break-inside: avoid;
+			margin-bottom: 1rem;
+		}
+		.category {
+			margin: 0;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		.title {
+			margin: 0.5rem 0 0.3rem;
+			text-align: left;
+			font-family: "Merriweather", serif;
+			font-size: 1.6rem;
+		}
+		.date {
+			font-size: 1.2rem;
+			display: block;
+			margin-bottom: 0.2rem;
+		}
+		.summary {
+			margin-top: 0;
+			font-size: 1.2rem;
+		}
+		.readon {
+			color: var(--blue);
+			font-size: 1.2rem;
+			display: inline-block;
+			margin-top: 0.5rem;
+		}
+		@media (orientation: portrait) {
+			columns: 1;
 		}
 	}
 }
