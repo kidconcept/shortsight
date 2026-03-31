@@ -143,9 +143,9 @@ footer nav a {
 	margin-top: 0;
 }
 
-.quotes {
-	border: 1px 0 1px 0;
-	border-color: var(--muted);
+hr {
+	height: 1px;
+	background-color: var(--muted);
 }
 
 a {
@@ -157,6 +157,11 @@ hr {
   margin-bottom: 6rem;
   height: 1px;
   border: none;
+}
+
+.videotext {
+	text-align: center;
+	margin-bottom: 8rem;
 }
 
 /* Layouts */
@@ -242,8 +247,6 @@ footer {
 }
 
 .quotes {
-	border-top: 1px solid var(--muted);
-	border-bottom: 1px solid var(--muted);
 	padding: 4rem 0;
 	margin: 4rem 0;
 	h3 {
@@ -436,6 +439,7 @@ footer {
 /* Featured works card styles */
 
 .featured {
+	margin-bottom: 8rem;
 	.card {
 		display: block;
 		margin-bottom: 0;
@@ -509,9 +513,7 @@ a.big {
 /* Lets Talk */
 
 .letstalk {
-	border-top: 1px solid var(--muted);
 	padding: 16rem 0;
-	margin-top: 8rem;
 	text-align: center;
 	@media (orientation: portrait) {
 			padding: 16rem 0;
@@ -527,6 +529,7 @@ a.big {
 	h1 {
 		font-family: "Merriweather", serif;
 		text-align: center;
+		margin-top: 0;
 	}
 	p {
 		text-align: center;

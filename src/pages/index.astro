@@ -3,22 +3,21 @@ import BaseLayout from '../layouts/BasicBitch.astro';
 const pageTitle = "Digital Design Project Lead";
 
 import Featured from '../components/Featured.astro';
-const allPosts = Object.values(import.meta.glob('./work/**/*.md', { eager: true }));
-
-const featuredCompanies = [
-	'travel',
+const allPosts = Object.values(import.meta.glob(['./work/**/*.{md,mdx}', './blog/**/*.{md,mdx}'], { eager: true }));
+const featuredSlugs = [
+  'travel',
   'mmf',
   'enrollment123',
-  'piper',
+  'deeptime',
 ];
 
 const featuredPosts = allPosts
   .filter(post =>
-    featuredCompanies.includes(post.frontmatter.slug)
+    featuredSlugs.includes(post.frontmatter.slug)
   )
   .sort((a, b) =>
-    featuredCompanies.indexOf(a.frontmatter.slug) -
-    featuredCompanies.indexOf(b.frontmatter.slug)
+    featuredSlugs.indexOf(a.frontmatter.slug) -
+    featuredSlugs.indexOf(b.frontmatter.slug)
   );
 
 ---
@@ -30,17 +29,21 @@ const featuredPosts = allPosts
 		</div>
 	</div>
 
-	<video
-	  autoplay
-	  loop
-	  muted
-	  playsinline
-	  poster="/media/hero.jpg"
-	  style="width:100%; height:auto;"
-	  id="homereel"
-	>
-	  <source src="/media/reel.mp4" type="video/mp4" />
-	</video>
+	<div class="grid featured">
+	  	{featuredPosts.map((post: any) => 
+	  		<Featured 
+	  			url={post.url} 
+	  			title={post.frontmatter.title} 
+	  			src={post.frontmatter.src} 
+	  			alt={post.frontmatter.alt} 
+	  			category={post.frontmatter.category} 
+	  			company={post.frontmatter.company}
+	  			slug={post.frontmatter.slug}
+	  		/>
+	  	)}
+	</div>
+
+<hr/>
 
 	<div class="grid skills">
 		<div class="card">
@@ -64,6 +67,8 @@ const featuredPosts = allPosts
 			<p>My background is broad. I’ve worked from finance to education and from environmental research to human health. This diversity of insight and experience means I have more solutions available and produce more creative works. Through the integration of insights across industries, I deliver more competitive results.</p>
 		</div>
 	</div>
+
+<hr/>
 
 	<div class="grid quotes">
 		<h3>What my coworkers are saying</h3>
@@ -89,20 +94,7 @@ const featuredPosts = allPosts
 		</div>
 	</div>
 
-	<div class="grid featured">
-	  	{featuredPosts.map((post: any) => 
-	  		<Featured 
-	  			url={post.url} 
-	  			title={post.frontmatter.title} 
-	  			src={post.frontmatter.src} 
-	  			alt={post.frontmatter.alt} 
-	  			category={post.frontmatter.category} 
-	  			company={post.frontmatter.company}
-	  			slug={post.frontmatter.slug}
-	  		/>
-	  	)}
-	</div>
-	<div class="readmore"><a class="big" href="/work">Read more cases</a></div>
+<hr/>
 
 	<div class="letstalk" id="contact">
 		<span class="squeezer">
@@ -111,6 +103,17 @@ const featuredPosts = allPosts
 		</span>
 	</div>
 
-
+	<video
+		autoplay
+		loop
+		muted
+		playsinline
+		poster="/media/hero.jpg"
+		style="width:100%; height:auto;"
+		id="homereel"
+		>
+	  <source src="/media/reel.mp4" type="video/mp4" />
+	</video>
+	<p class="videotext">Samples of some of the products I've worked on.</p>
 
 </BaseLayout>
